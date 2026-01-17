@@ -38,26 +38,6 @@ The monitoring logic runs on the EC2 instance and interacts directly with Dynamo
 
 ---
 
-## Project Structure
-
-api-health-monitor/
-├── app/
-│   ├── __init__.py
-│   ├── main.py            # Entry point
-│   ├── health_checker.py  # API health check logic
-│   ├── db.py              # DynamoDB access
-│   └── notifier.py        # SNS notifications
-│
-├── terraform/
-│   ├── main.tf
-│   ├── ec2.tf
-│   ├── iam.tf
-│   ├── dynamodb.tf
-│   ├── sns.tf
-│   ├── variables.tf
-│   └── outputs.tf
-│
-└── README.md
 
 ---
 
@@ -132,3 +112,4 @@ In a production setup, this system can scale by:
 This project demonstrates backend system design, infrastructure-as-code, and operational thinking around reliability and alerting.
 
 The emphasis is on simplicity, correctness, and clear design decisions.
+
